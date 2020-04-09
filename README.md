@@ -43,3 +43,10 @@ Convert webm to mp4 (for PPT etc):
 ```
 ffmpeg -i Stretch-MR.webm Stretching-Demo.mp4
 ```
+
+### Misc
+
+Run a command in each directory with a file:
+```
+find -name conf.yml -execdir python -m cog.fill \;
+```
