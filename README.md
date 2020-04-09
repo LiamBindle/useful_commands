@@ -9,7 +9,7 @@ rsync -avAXEWSlHRh /./ExtData . --no-compress --info=progress2
 
 Change attribute inplace:
 ```
-ncatted -O -h -a units,time,o,c,'hours since 1985-1-1 00:00:00' file.nc
+ncatted -O -h -a units,time,o,c,'hours since 1985-1-1 00:00:00' inout.nc
 ```
 
 Add, subtract, multiply, divide operations on variables in a single NetCDF file:
@@ -25,6 +25,11 @@ ncbo --op_typ=add 1.nc 2.nc 3.nc
 Compress NetCDF file:
 ```
 nccopy -d1 test.nc testd1.nc
+```
+
+Keep variables with names matching a regex:
+```
+  ncks -v foo in.nc out.nc
 ```
 
 ### Video creation
