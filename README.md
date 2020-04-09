@@ -22,7 +22,7 @@ Add, subtract, multiply, divide operations all variables in multiple NetCDF file
 ncbo --op_typ=add 1.nc 2.nc 3.nc
 ```
 
-Compress NetCDF file:
+Compress NetCDF file (this is usually extremely slow):
 ```
 nccopy -d1 test.nc testd1.nc
 ```
