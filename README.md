@@ -55,3 +55,8 @@ Run a command in each directory with a file:
 ```
 find -name conf.yml -execdir python -m cog.fill \;
 ```
+
+Launch LSF job for each directory with a file:
+```
+find sg-ensemble-2/c180e -name 'conf.yml' -execdir sh -c "bsub < /home/IDC-ID-74944/scratch1/liam.bindle/iwa.bsub" \;
+```
