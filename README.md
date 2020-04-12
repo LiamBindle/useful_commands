@@ -49,6 +49,17 @@ Convert webm to mp4 (for PPT etc):
 ffmpeg -i Stretch-MR.webm Stretching-Demo.mp4
 ```
 
+### Image manipulation
+Create a grid of images
+```
+montage -geometry +1+1 -tile 4x1 EU*/rvd-O3.png montage_rvd-EU.png
+```
+
+Vertically stack and left align images
+```
+convert montage_rvd-EU.png montage_rvd-IN.png -gravity West -append out.png
+```
+
 ### Misc
 
 Run a command in each directory with a file:
