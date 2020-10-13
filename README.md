@@ -32,6 +32,11 @@ Keep variables with names matching a regex:
   ncks -v foo in.nc out.nc
 ```
 
+Concatenate files together
+```
+ncrcat GCHP.MassCons.201* masscons1.nc
+```
+
 ### Video creation
 
 Convert jpegs to mp4:
