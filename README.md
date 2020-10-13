@@ -17,6 +17,8 @@ Add, subtract, multiply, divide operations on variables in a single NetCDF file:
 ncap2 -s 'var3=(var1+var2)' in.nc out.nc
 ```
 
+Note: max chunk size if 4GB. Use the `--cnk_dmn time,50` option to chunk the dataset <4GB.
+
 Add, subtract, multiply, divide operations all variables in multiple NetCDF files:
 ```
 ncbo --op_typ=add 1.nc 2.nc 3.nc
